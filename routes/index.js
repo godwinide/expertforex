@@ -20,7 +20,7 @@ router.get("/about", (req,res) => {
 
 router.get("/contact", (req,res) => {
     try{
-        return res.render("contact", {pageTitle: "Contact Us", req});
+        return res.render("contact", {pageTitle: "Contact Us", layout: false, req});
     }
     catch(err){
         return res.redirect("/");
